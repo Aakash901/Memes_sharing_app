@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A8DFDA"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="420dp"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/imageView"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="169dp"
+            android:layout_marginTop="107dp"
+            android:layout_marginEnd="163dp"
+            android:layout_marginBottom="95dp"
+            android:foregroundGravity="center|right" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:background="#8260CD"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#E1C379"
+                android:onClick="shareMeme"
+                android:text="@string/share"
+                android:textAllCaps="false"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#EF4C87"
+                android:onClick="nextMeme"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                tools:ignore="UsingOnClickInXml" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="369dp"
+        android:background="@color/black"
+        android:text="Ruko Jra Sabr Kro ...Meme load ho Rha Hai"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="3dp">
+
+        <ImageView
+            android:id="@+id/imageView_two"
+            android:layout_width="420dp"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="170dp"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ProgressBar
+            android:id="@+id/progressbar_two"
+            android:layout_width="77dp"
+            android:layout_height="55dp"
+            android:layout_alignStart="@id/imageView_two"
+            android:layout_alignEnd="@+id/imageView_two"
+            android:layout_alignBottom="@+id/imageView_two"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="169dp"
+            android:layout_marginTop="107dp"
+            android:layout_marginEnd="163dp"
+            android:layout_marginBottom="95dp"
+            android:foregroundGravity="center|right" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:background="#5E3AAF"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_two"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="18dp"
+                android:backgroundTint="#E1C379"
+                android:onClick="shareMemeTwo"
+                android:text="@string/share"
+                android:textAllCaps="false"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/button2_two"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="190dp"
+                android:backgroundTint="#EF4C87"
+                android:onClick="nextMemeTwo"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                tools:ignore="UsingOnClickInXml" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
